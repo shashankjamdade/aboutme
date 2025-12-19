@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashank Jamdade | Lead Backend Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-mesh text-gray-200 antialiased">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-white/5 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div id="nav-brand" class="text-xl font-bold tracking-tighter cursor-pointer hover:opacity-80 transition-opacity">
+                SHASHANK<span class="text-purple-500">.</span>JAMDADE
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="#about" class="hover:text-purple-400 transition-colors">About</a>
+                <a href="#experience" class="hover:text-purple-400 transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-purple-400 transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-purple-400 transition-colors">Contact</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a id="nav-email-link" href="#" class="hidden lg:block text-xs font-mono text-gray-500 hover:text-white transition-colors"></a>
+                <button id="nav-resume-button" class="bg-purple-600 hover:bg-purple-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-lg shadow-purple-500/20 active:scale-95">
+                    Resume
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="pt-40 pb-20 px-6">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold mb-6">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
+                        </span>
+                        AVAILABLE FOR LEADERSHIP ROLES
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                        Building <span class="text-gradient">high-scale</span> event-driven systems.
+                    </h1>
+                    <p id="hero-bio" class="text-gray-400 text-lg mb-8 max-w-lg leading-relaxed"></p>
+                    <div class="flex flex-wrap gap-4">
+                        <button id="hero-resume-button" class="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-xl font-bold hover:bg-gray-200 transition-all active:scale-95">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            Download CV
+                        </button>
+                        <div id="hero-social-links" class="flex gap-4 items-center ml-4"></div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-square rounded-3xl overflow-hidden glass border-white/10 p-4 animate-float">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1000&auto=format&fit=crop" alt="Shashank Jamdade" class="w-full h-full object-cover rounded-2xl grayscale hover:grayscale-0 transition-all duration-500"/>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 glass p-6 rounded-2xl border border-white/10 hidden md:block">
+                        <div class="flex gap-4">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-white">7+</div>
+                                <div class="text-[10px] text-gray-500 uppercase tracking-widest">Years Exp.</div>
+                            </div>
+                            <div class="w-[1px] bg-white/10"></div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-white">50M+</div>
+                                <div class="text-[10px] text-gray-500 uppercase tracking-widest">TPS Scale</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="py-24 px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold mb-12 flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-purple-500"><path d="M10 14l-4 4 4 4"/><path d="M14 4l4 4-4 4"/><path d="m18 18-4-4"/><path d="m6 6 4 4"/></svg>
+                    Stack & Expertise
+                </h2>
+                <div id="skills-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-24 px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-16 text-center">Career Timeline</h2>
+                <div id="experience-timeline" class="space-y-16"></div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-24 px-6 bg-white/[0.02]">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex justify-between items-end mb-12">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-4">Core Projects</h2>
+                        <p class="text-gray-500">Innovating at the intersection of Fintech and AI Automation.</p>
+                    </div>
+                </div>
+                <div id="projects-grid" class="grid md:grid-cols-3 gap-8"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 px-6 border-t border-white/5">
+            <div class="max-w-6xl mx-auto">
+                <div class="glass p-12 rounded-[40px] relative overflow-hidden text-center">
+                    <div class="absolute top-0 right-0 p-32 bg-purple-600/10 blur-[120px] rounded-full"></div>
+                    <div class="absolute bottom-0 left-0 p-32 bg-blue-600/10 blur-[120px] rounded-full"></div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Let's talk <span class="text-gradient">Backend & AI.</span></h2>
+                    <div class="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-10">
+                       <div id="contact-email-card" class="glass p-4 rounded-2xl flex items-center gap-4"></div>
+                       <div id="contact-phone-card" class="glass p-4 rounded-2xl flex items-center gap-4"></div>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                        <a id="contact-hire-me" href="#" class="flex items-center gap-3 bg-white text-black px-8 py-4 rounded-2xl font-bold hover:scale-105 transition-all shadow-xl shadow-white/10 active:scale-95">Hire Me</a>
+                        <div id="contact-social-links" class="flex gap-4"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 px-6 text-center text-gray-600 text-[10px] border-t border-white/5 tracking-[0.3em] uppercase">
+        &copy; 2024 SHASHANK JAMDADE &bull; BANGALORE &bull; ARCHITECTED WITH GEMINI
+    </footer>
+
+    <!-- AI Chat Widget -->
+    <div class="fixed bottom-6 right-6 z-[100] print:hidden">
+        <button id="chat-open-button" class="bg-purple-600 hover:bg-purple-700 text-white p-4 rounded-full shadow-xl shadow-purple-500/20 transition-all hover:scale-110 group active:scale-90">
+             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:rotate-12 transition-transform"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+        </button>
+
+        <div id="chat-window" class="hidden glass w-80 h-96 rounded-2xl border border-white/20 flex flex-col shadow-2xl overflow-hidden">
+            <div class="p-4 bg-white/5 border-b border-white/10 flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span class="font-bold text-sm text-purple-400">GenAI Assistant</span>
+                </div>
+                <button id="chat-close-button" class="text-gray-400 hover:text-white text-xl">&times;</button>
+            </div>
+            <div id="chat-messages" class="flex-1 overflow-y-auto p-4 space-y-4">
+                <!-- Messages will be injected here -->
+            </div>
+            <div class="p-3 bg-white/5 border-t border-white/10 flex gap-2">
+                <input id="chat-input" type="text" placeholder="Ask me anything..." class="flex-1 bg-transparent border-none outline-none text-xs text-white placeholder:text-gray-600"/>
+                <button id="chat-send-button" class="p-1 hover:text-purple-400 text-gray-400 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4 20-7z"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+      // Shim for environment globals needed by the GenAI library
+      window.process = { env: { API_KEY: '' } };
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
